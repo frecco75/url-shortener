@@ -1,5 +1,5 @@
 # url-shortener
-An URL shortener written in Python, using Django.
+A URL shortener written in Python, using Django.
 
 ### Running ###
 ```
