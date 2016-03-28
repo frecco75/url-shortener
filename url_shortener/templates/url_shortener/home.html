@@ -1,0 +1,16 @@
+{% extends "url_shortener/base.html" %}
+{% block content %}
+    <p>
+       Liste des URLs raccourcies :
+       <ul>
+       {% for shortURL in shortURLList %}
+           <li>
+               {{ shortURL.url }} via <a href="{% url 'url_shortener.views.read' shortURL.code %}">{{ shortURL.code }}</a> 
+               {% if shortURL.pseudo %}par {{ shortURL.pseudo }}{% endif %} ({{ shortURL.nb_acces }} accès)
+           </li>
+       {% empty %}
+           <p>Aucune URL.</p>
+	   {% endfor %}
+	  </ul>
+    </p>
+{% endblock %}

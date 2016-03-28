@@ -1,0 +1,16 @@
+/target
+/.settings
+/.DS_Store
+/.project
+/*.pyc
+/.pydevproject
+/.classpath
+/target
+/.settings
+/.DS_Store
+/.project
+/bin
+/.classpath
+/target
+/logs
+*.pyc

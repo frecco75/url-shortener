@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <title>{% block title %}URL Shortener{% endblock %}</title>
+</head>
+<body>
+    <h1>Racourcisseur d'url</h1>
+    <nav>
+       {% block nav %}
+	       <a href="{% url 'url_shortener.views.home' %}">Accueil</a>
+	       <br>
+	       <a href="{% url 'url_shortener.views.add' %}">Racourcir une URL</a>
+       {% endblock %}
+   </nav>
+   <section id="content">
+       {% block content %}{% endblock %}
+   </section>
+<footer>© 2016 - URL Shortener</footer>
+</body>
+</html>
