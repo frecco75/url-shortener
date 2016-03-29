@@ -8,7 +8,7 @@ def home(request):
     shortURLList = ShortURL.objects.order_by('-nb_acces')
     return render(request, 'url_shortener/home.html', {'shortURLList' : shortURLList})
 
-def redirect_to_home(request):
+def go_to_home(request):
     return redirect(home)
     
 def read(request, token):
@@ -18,14 +18,14 @@ def read(request, token):
         shortUrl.save()
         return redirect(shortUrl.url, permanent=True)
     except ShortURL.DoesNotExist:
-        return redirect_to_home(request)
+        return go_to_home(request)
 
 def add(request):
     if request.method == 'POST':
         form = ShortUrlForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect_to_home(request)
+            return go_to_home(request)
     else:
         form = ShortUrlForm()
 
