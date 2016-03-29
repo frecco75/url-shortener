@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from django.db import models
-from services import generer
+from url_shortener.services import generer
 
 
 class ShortURL(models.Model):

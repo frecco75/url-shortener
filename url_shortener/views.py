@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.shortcuts import render, redirect
-from forms import ShortUrlForm
-from models import ShortURL
+from url_shortener.forms import ShortUrlForm
+from url_shortener.models import ShortURL
 
 
 def home(request):
