@@ -15,9 +15,8 @@ pip install pytz
 
 ### Installation ###
 
-Install the database
+Create the database
 ```
-python manage.py makemigrations
 python manage.py migrate
 ```
 
