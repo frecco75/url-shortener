@@ -7,9 +7,9 @@
     <h1>Raccourcisseur d'url</h1>
     <nav>
        {% block nav %}
-	       <a href="{% url 'url_shortener.views.home' %}">Accueil</a>
+	       <a href="{% url 'home' %}">Accueil</a>
 	       <br>
-	       <a href="{% url 'url_shortener.views.add' %}">Raccourcir une URL</a>
+	       <a href="{% url 'url_add' %}">Raccourcir une URL</a>
        {% endblock %}
    </nav>
    <section id="content">

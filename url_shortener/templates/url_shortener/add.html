@@ -1,6 +1,6 @@
 {% extends "url_shortener/base.html" %}
 {% block content %}
-	<form method="post" action="{% url 'url_shortener.views.add' %}">
+	<form method="post" action="{% url 'url_add' %}">
 	    {% csrf_token %}
 	    {{ form.as_p }}
 	    <input type="submit"/>

@@ -5,7 +5,7 @@
        <ul>
        {% for shortURL in shortURLList %}
            <li>
-               {{ shortURL.url }} via <a href="{% url 'url_shortener.views.read' shortURL.code %}">{{ shortURL.code }}</a> 
+               {{ shortURL.url }} via <a href="http://{{ request.get_host }}{% url 'url_redirection' shortURL.code %}">{{ shortURL.code }}</a> 
                {% if shortURL.pseudo %}par {{ shortURL.pseudo }}{% endif %} ({{ shortURL.nb_acces }} accès)
            </li>
        {% empty %}
