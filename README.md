@@ -2,7 +2,7 @@
 A URL shortener written in Python, using Django.
 
 
-### Prerequisites ###
+## Prerequisites ##
 Install Django
 ```
 pip install Django==1.9.4
@@ -13,14 +13,14 @@ Install pytz
 pip install pytz
 ```
 
-### Installation ###
+## Installation ##
 
 Create the database
 ```
 python manage.py migrate
 ```
 
-### Running ###
+## Running ##
 ```
 python manage.py runserver
 ```
