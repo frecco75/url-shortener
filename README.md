@@ -1,5 +1,4 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/629f959d74f54dec8a8ed8a203f1569a)](https://www.codacy.com/app/fabien-recco/url-shortener)
-
 # url-shortener
 A URL shortener written in Python, using Django.
 
